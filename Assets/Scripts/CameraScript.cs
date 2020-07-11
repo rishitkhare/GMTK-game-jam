@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
+    public float xOffset;
+    public float yOffset;
     public GameObject Player;
 
     // Start is called before the first frame update
@@ -20,6 +22,6 @@ public class CameraScript : MonoBehaviour
 
     public void LateUpdate()
     {
-        this.gameObject.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -10);
+        this.gameObject.transform.position = new Vector3(Player.transform.position.x + xOffset, Player.transform.position.y + yOffset, -10);
     }
 }
