@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelButtonScript : MonoBehaviour
 {
     private GameObject Manager;
     private GlobalStorage storage;
-    private SpriteRenderer myTexture;
+    private Image myTexture;
+    private Button myButton;
     public int Level;
     public string Load;
     public Sprite lockedTexture;
@@ -16,7 +18,8 @@ public class LevelButtonScript : MonoBehaviour
     {
         Manager = GameObject.Find("GameManager");
         storage = Manager.gameObject.GetComponent<GlobalStorage>();
-        myTexture = this.gameObject.GetComponent<SpriteRenderer>();
+        myTexture = this.gameObject.GetComponent<Image>();
+        myButton = this.gameObject.GetComponent<Button>();
     }
 
     // Update is called once per frame
@@ -25,10 +28,12 @@ public class LevelButtonScript : MonoBehaviour
         if(storage.unlocked >= Level)
         {
             myTexture.sprite = unlocked_Texture;
+            myButton.enabled = true;
         }
         else
         {
             myTexture.sprite = lockedTexture;
+            myButton.enabled = false;
         }
     }
 

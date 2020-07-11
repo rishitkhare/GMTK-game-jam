@@ -720,6 +720,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2d2222d93633042b550f8d7a905bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberAbilities: 0
+  abilities: []
+  unlocked: 0
 --- !u!4 &1301911698
 Transform:
   m_ObjectHideFlags: 0
