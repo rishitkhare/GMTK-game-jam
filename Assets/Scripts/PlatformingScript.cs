@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class PlatformingScript : MonoBehaviour
 {
     public float Speed;
+    public float terminalVelocity = -4f;
     public float jumpMultiplier;
     public int leewayFrames = 4;
     public KeyCode jump;
@@ -105,7 +106,10 @@ public class PlatformingScript : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpMultiplier * 13f);
         }
 
-
+        if(rb.velocity.y < terminalVelocity)
+        {
+            rb.velocity = new Vector2(0, terminalVelocity);
+        }
 
     }
 

@@ -16,7 +16,7 @@ public class LevelManagerScript : MonoBehaviour
         int abl = Random.Range(0, abilities.Length);
         if(abilities[abl].Equals("J"))
         {
-            PlayerCont.jumpMultiplier = 1.4f;
+            PlayerCont.jumpMultiplier = 1.8f;
         }
         else if(abilities[abl].Equals("S"))
         {
