@@ -11,8 +11,9 @@ public class PlatformingScript : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public LayerMask collidable;
+    public SpriteRenderer playerSpriteRenderer;
 
-    public float velocityX;
+    float velocityX;
     public bool grounded;
     private Rigidbody2D rb;
 
@@ -31,11 +32,19 @@ public class PlatformingScript : MonoBehaviour
         if (Input.GetKey(left))
         {
             velocityX += Speed * -1;
+            if (grounded)
+            {
+                playerSpriteRenderer.flipX = true;
+            }
         }
 
         if (Input.GetKey(right))
         {
             velocityX += Speed;
+            if (grounded)
+            {
+                playerSpriteRenderer.flipX = false;
+            }
         }
 
         velocityX *= 0.85f;

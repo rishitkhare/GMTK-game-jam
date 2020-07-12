@@ -1,34 +1,49 @@
 fileFormatVersion: 2
-guid: 368ad7f42148766458718fff4b148210
+guid: 5aee7f8380a294aedb6c2f4c195cb09a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7805522442629758382
-    second: GroundBasic_0
+      213: -7939019787916963921
+    second: Ancient ruin-7_0
   - first:
-      213: 3296161538015536924
-    second: GroundBasic_1
+      213: -2500793957106064420
+    second: Ancient ruin-7_1
   - first:
-      213: -8725080566340045033
-    second: GroundBasic_2
+      213: -1530016202697339037
+    second: Ancient ruin-7_2
   - first:
-      213: 7046867323716687820
-    second: GroundBasic_3
+      213: 1632784196177576845
+    second: Ancient ruin-7_3
   - first:
-      213: -8210038439251489155
-    second: GroundBasic_4
+      213: -9210927991898343703
+    second: Ancient ruin-7_4
   - first:
-      213: -8261486665975155286
-    second: GroundBasic_5
+      213: -5605647438506242597
+    second: Ancient ruin-7_5
   - first:
-      213: 7492126108045298510
-    second: GroundBasic_6
+      213: -193704572547282620
+    second: Ancient ruin-7_6
   - first:
-      213: -730014053779902156
-    second: GroundBasic_7
+      213: -8979484851951915155
+    second: Ancient ruin-7_7
   - first:
-      213: -6316687537826721277
-    second: GroundBasic_8
+      213: 4467895929463331142
+    second: Ancient ruin-7_8
+  - first:
+      213: -8158206987641968674
+    second: Ancient ruin-7_9
+  - first:
+      213: -7766437243047445741
+    second: Ancient ruin-7_10
+  - first:
+      213: -7127922591071373854
+    second: Ancient ruin-7_11
+  - first:
+      213: 263714348371180009
+    second: Ancient ruin-7_12
+  - first:
+      213: -4364620280828997029
+    second: Ancient ruin-7_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,7 +141,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GroundBasic_0
+      name: Ancient ruin-7_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf896cc09fe2d190800000000000000
+      internalID: -7939019787916963921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient ruin-7_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3ef3255256b4dd0800000000000000
+      internalID: -2500793957106064420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient ruin-7_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f02a9be5a44cae0800000000000000
+      internalID: -1530016202697339037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient ruin-7_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8349085390d8a610800000000000000
+      internalID: 1632784196177576845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient ruin-7_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6723ffac53c2080800000000000000
+      internalID: -9210927991898343703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient ruin-7_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddc1cbca5db432b0800000000000000
+      internalID: -5605647438506242597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient ruin-7_6
       rect:
         serializedVersion: 2
         x: 0
@@ -134,20 +275,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252c6b0a1b63da390800000000000000
-      internalID: -7805522442629758382
+      spriteID: 44943f1b7b2df4df0800000000000000
+      internalID: -193704572547282620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundBasic_1
+      name: Ancient ruin-7_7
       rect:
         serializedVersion: 2
         x: 32
@@ -155,20 +296,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c17a8bb74715ebd20800000000000000
-      internalID: 3296161538015536924
+      spriteID: d6fa76d3a16726380800000000000000
+      internalID: -8979484851951915155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundBasic_2
+      name: Ancient ruin-7_8
       rect:
         serializedVersion: 2
         x: 64
@@ -176,20 +317,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71733aec3794ae680800000000000000
-      internalID: -8725080566340045033
+      spriteID: 64953190da7210e30800000000000000
+      internalID: 4467895929463331142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundBasic_3
+      name: Ancient ruin-7_9
       rect:
         serializedVersion: 2
         x: 0
@@ -197,20 +338,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc7d079be708bc160800000000000000
-      internalID: 7046867323716687820
+      spriteID: ed7ad7108f938ce80800000000000000
+      internalID: -8158206987641968674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundBasic_4
+      name: Ancient ruin-7_10
       rect:
         serializedVersion: 2
         x: 32
@@ -218,20 +359,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7ecc14c985101e80800000000000000
-      internalID: -8210038439251489155
+      spriteID: 31bfacdc972183490800000000000000
+      internalID: -7766437243047445741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundBasic_5
+      name: Ancient ruin-7_11
       rect:
         serializedVersion: 2
         x: 64
@@ -239,20 +380,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5bce506ad495d80800000000000000
-      internalID: -8261486665975155286
+      spriteID: 2e575b43b28841d90800000000000000
+      internalID: -7127922591071373854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundBasic_6
+      name: Ancient ruin-7_12
       rect:
         serializedVersion: 2
         x: 0
@@ -260,20 +401,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4b4872100169f760800000000000000
-      internalID: 7492126108045298510
+      spriteID: 9e976d87dc6e8a300800000000000000
+      internalID: 263714348371180009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GroundBasic_7
+      name: Ancient ruin-7_13
       rect:
         serializedVersion: 2
         x: 32
@@ -281,35 +422,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 431f76bf5187ed5f0800000000000000
-      internalID: -730014053779902156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GroundBasic_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30293bec62e9658a0800000000000000
-      internalID: -6316687537826721277
+      spriteID: b52d8b5baf0cd63c0800000000000000
+      internalID: -4364620280828997029
       vertices: []
       indices: 
       edges: []

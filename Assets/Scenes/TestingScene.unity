@@ -1747,8 +1747,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 64481372d24dee643959593bfb35a674, type: 3}
-  m_Color: {r: 0.9150943, g: 0.5050285, b: 0.8927125, a: 1}
+  m_Sprite: {fileID: -2311659948842064771, guid: c29412705de054a268a84222968fe757,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1792,7 +1793,7 @@ MonoBehaviour:
   collidable:
     serializedVersion: 2
     m_Bits: 512
-  velocityX: 0
+  playerSpriteRenderer: {fileID: 220216266}
   grounded: 0
 --- !u!1 &846952516
 GameObject:
