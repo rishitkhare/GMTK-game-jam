@@ -7,7 +7,6 @@ public class Puzzle_Button : MonoBehaviour
     public GameObject myDoor;
     private Puzzle_Door myDoorScript;
     private SpriteRenderer myRenderer;
-    private BoxCollider2D myCollider;
     private Sprite[] anim;
     private BoxCollider2D myCollider;
     private int i;
@@ -20,7 +19,6 @@ public class Puzzle_Button : MonoBehaviour
         myRenderer = this.gameObject.GetComponent<SpriteRenderer>();
         myCollider = this.gameObject.GetComponent<BoxCollider2D>();
         myDoorScript = myDoor.gameObject.GetComponent<Puzzle_Door>();
-        myCollider = this.gameObject.GetComponent<BoxCollider2D>();
         pressed = false;
 
         anim = Resources.LoadAll<Sprite>("ButtonDown");
