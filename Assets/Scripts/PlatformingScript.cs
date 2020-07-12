@@ -12,6 +12,7 @@ public class PlatformingScript : MonoBehaviour
     public KeyCode right;
     public LayerMask collidable;
     public SpriteRenderer playerSpriteRenderer;
+    public Vector2 size = new Vector2(1,1);
 
     float velocityX;
     public bool grounded;
@@ -23,6 +24,8 @@ public class PlatformingScript : MonoBehaviour
         rb.velocity = new Vector2(0, 0);
         velocityX = 0;
         grounded = false;
+        size.x /= 2f;
+        size.y /= 2f;
     }
 
     private void FixedUpdate()
@@ -31,20 +34,17 @@ public class PlatformingScript : MonoBehaviour
 
         if (Input.GetKey(left))
         {
-            velocityX += Speed * -1;
-            if (grounded)
-            {
-                playerSpriteRenderer.flipX = true;
-            }
+            velocityX -= Speed;
+
+            playerSpriteRenderer.flipX = true;
         }
 
         if (Input.GetKey(right))
         {
             velocityX += Speed;
-            if (grounded)
-            {
-                playerSpriteRenderer.flipX = false;
-            }
+
+            playerSpriteRenderer.flipX = false;
+
         }
 
         velocityX *= 0.85f;
@@ -80,17 +80,17 @@ public class PlatformingScript : MonoBehaviour
     private bool hasGroundBelow()
     {
         //ray origin is shifted right thrice in order for a more wholistic rendering of collision
-        Vector2 rayOrigin = new Vector2(transform.position.x - 0.45f, transform.position.y);
+        Vector2 rayOrigin = new Vector2(transform.position.x - (size.x - 0.05f), transform.position.y);
         bool sumOfThreeRays = false;
 
         for(int i = 0; i < 3; i ++)
         {
-            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, 0.55f, collidable);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, (size.y + 0.05f), collidable);
             Debug.DrawRay(rayOrigin, Vector2.down, Color.green, 0.01f);
 
             sumOfThreeRays = sumOfThreeRays || (hit.collider != null);
 
-            rayOrigin.x += 0.45f;
+            rayOrigin.x += size.x - 0.05f;
         }
 
         return sumOfThreeRays;
@@ -99,18 +99,18 @@ public class PlatformingScript : MonoBehaviour
     private bool wallInCurrentDirection()
     {
         //ray origin is shifted down thrice in order for a more wholistic rendering of collision
-        Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y - 0.45f);
+        Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y - (size.y - 0.05f));
         bool resultOfThree = false;
         Vector2 rayDirection = (velocityX > 0) ? Vector2.right : Vector2.left;
 
         for (int i = 0; i < 3; i ++)
         {
-            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, 0.52f + Mathf.Abs(velocityX) * Time.fixedDeltaTime, collidable);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, (size.x + 0.02f) + Mathf.Abs(velocityX) * Time.fixedDeltaTime, collidable);
             Debug.DrawRay(transform.position, rayDirection, Color.blue);
 
             resultOfThree = resultOfThree || (hit.collider != null);
 
-            rayOrigin.y += 0.45f;
+            rayOrigin.y += size.y - 0.05f;
         }
 
 
