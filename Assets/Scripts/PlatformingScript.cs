@@ -17,7 +17,11 @@ public class PlatformingScript : MonoBehaviour
 
     float velocityX;
     Animator animator;
-    public bool grounded;
+    private bool grounded;
+
+    public Vector2 respawnCoords;
+    public GameObject LevelManager;
+
     private Rigidbody2D rb;
 
     //animator hashes
@@ -145,6 +149,16 @@ public class PlatformingScript : MonoBehaviour
 
 
         return resultOfThree;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag.Equals("Respawn"))
+        {
+            LevelManagerScript Manager = LevelManager.gameObject.GetComponent<LevelManagerScript>();
+            Manager.startOver();
+            this.transform.position = new Vector3(respawnCoords.x, respawnCoords.y, 0);
+        }
     }
 
 
