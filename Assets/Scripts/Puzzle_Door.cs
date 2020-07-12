@@ -10,6 +10,7 @@ public class Puzzle_Door : MonoBehaviour
     public DoorType myType;
     public float FPS;
     private SpriteRenderer myRenderer;
+    private BoxCollider2D myCollider;
     private Sprite[] current;
     private Animation anim;
     private int a;
@@ -17,6 +18,7 @@ public class Puzzle_Door : MonoBehaviour
     private void Start()
     {
         myRenderer = this.gameObject.GetComponent<SpriteRenderer>();
+        myCollider = this.gameObject.GetComponent<BoxCollider2D>();
         current = Resources.LoadAll<Sprite>("DoorUp");
         anim = this.gameObject.GetComponent<Animation>();
         a = 1;
@@ -34,6 +36,8 @@ public class Puzzle_Door : MonoBehaviour
         if(a < current.Length - 1)
         {
             a++;
+            myCollider.size -= new Vector2(0, 0.125f);
+            myCollider.offset += new Vector2(0, 0.0625f);
             Invoke("changeFrame", 1/FPS);
         }
         else
