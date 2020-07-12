@@ -7,16 +7,25 @@ public class PlatformingScript : MonoBehaviour
 {
     public float Speed;
     public float jumpMultiplier;
+    public int leewayFrames = 4;
     public KeyCode jump;
     public KeyCode left;
     public KeyCode right;
     public LayerMask collidable;
     public SpriteRenderer playerSpriteRenderer;
-    public Vector2 size = new Vector2(1,1);
+    public Vector2 size = new Vector2(1, 1);
 
     float velocityX;
+    Animator animator;
     public bool grounded;
     private Rigidbody2D rb;
+
+    //animator hashes
+    private readonly int speedHash = Animator.StringToHash("Speed");
+    private readonly int groundedHash = Animator.StringToHash("Grounded");
+
+    //leeway frame counter
+
 
     void Start()
     {
@@ -26,11 +35,31 @@ public class PlatformingScript : MonoBehaviour
         grounded = false;
         size.x /= 2f;
         size.y /= 2f;
+
+        animator = GetComponent<Animator>();
+    }
+
+//animations handled on Update(), physics handled on FixedUpdate()
+    private void Update()
+    {
+        animator.SetFloat(speedHash, Mathf.Abs(velocityX));
+        animator.SetBool(groundedHash, grounded);
     }
 
     private void FixedUpdate()
     {
+        bool groundedPrevious = grounded;
         grounded = hasGroundBelow();
+
+        //Gives player leeway when running and jumping off platforms
+        if(groundedPrevious)
+        {
+
+        }
+        else
+        {
+            
+        }
 
         if (Input.GetKey(left))
         {
