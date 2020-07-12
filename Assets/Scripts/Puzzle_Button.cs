@@ -40,5 +40,26 @@ public class Puzzle_Button : MonoBehaviour
             myDoorScript.Invoke("changeFrame", 1);
         }
     }
+<<<<<<< Updated upstream
     
+=======
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(!pressed)
+        {
+            i = 0;
+            pressed = true;
+            Invoke("changeFrame", 1 / FPS);
+        }
+
+    }
+
+    public void startOver()
+    {
+        myRenderer.sprite = anim[0];
+        myCollider.size = new Vector2(1, 0.5f);
+        pressed = false;
+    }
+>>>>>>> Stashed changes
 }

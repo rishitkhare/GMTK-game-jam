@@ -10,7 +10,18 @@ public class PlatformingScript : MonoBehaviour
     public KeyCode jump;
     public KeyCode left;
     public KeyCode right;
+<<<<<<< Updated upstream
     private bool grounded;
+=======
+    public LayerMask collidable;
+    public SpriteRenderer playerSpriteRenderer;
+    public Vector2 size = new Vector2(1,1);
+    public Vector2 respawnCoords;
+    public GameObject LevelManager;
+
+    float velocityX;
+    public bool grounded;
+>>>>>>> Stashed changes
     private Rigidbody2D rb;
     
     void Start()
@@ -46,6 +57,16 @@ public class PlatformingScript : MonoBehaviour
         grounded = true;
     }
     
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag.Equals("Respawn"))
+        {
+            LevelManagerScript Manager = LevelManager.gameObject.GetComponent<LevelManagerScript>();
+            Manager.startOver();
+            this.transform.position = new Vector3(respawnCoords.x, respawnCoords.y, 0);
+        }
+    }
 
 
 }
