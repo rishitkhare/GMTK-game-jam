@@ -39,9 +39,12 @@ public class Puzzle_Door : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(winNum > 0 && LScript.score >= winNum)
+        if(winNum == 3)
         {
-            Invoke("changeFrame", 1 / FPS);
+            if(LScript.score >= winNum)
+            {
+                Invoke("changeFrame", 1 / FPS);
+            }
         }
     }
 
@@ -61,7 +64,7 @@ public class Puzzle_Door : MonoBehaviour
         {
             a++;
             myCollider.size -= new Vector2(0, 0.125f);
-            myCollider.offset += new Vector2(0, 0.625f);
+            myCollider.offset += new Vector2(0, 0.0625f);
             Invoke("changeFrame", 1/FPS);
         }
         else
